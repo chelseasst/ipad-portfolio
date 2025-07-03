@@ -1,0 +1,58 @@
+:host
+  display: block
+  width: 250px
+  height: 100%
+  border-radius: 20px
+  overflow: hidden
+
+.music-container
+  width: 250px
+  background-color: rgba(255, 255, 255, 0.69)
+  padding: 1rem
+
+.content
+  p
+    font-weight: 700
+    font-size: 0.9rem
+
+.controllers-div
+  display: flex
+  justify-content: space-between
+  align-items: flex-end
+  padding-top: 1rem
+
+.controllers
+  display: flex
+  gap: 20px
+
+.arrow,
+.pause
+  height: 15px
+  &:hover
+    transform: scale(1.2)
+
+.song-name
+  span
+    font-size: 10px
+    color: rgb(181, 181, 181)
+
+.song-name
+  p
+    font-size: 12px
+
+// hover effect
+.content
+  position: relative
+
+  .record-img
+    display: block
+
+  .text
+    display: none
+
+  &:hover
+    .record-img
+      display: none
+
+    .text
+      display: block

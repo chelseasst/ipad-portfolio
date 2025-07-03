@@ -1,0 +1,35 @@
+:host
+    display: block
+    &:hover
+        transform: scale(1.1)
+    // TODO remove later
+
+.app-item-content
+    width: 80px
+    height: 80px
+    background-color: white
+    border-radius: 20px
+    overflow: hidden
+
+.app-item-content,
+.app-item-container
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+.image-cont
+    img
+        width: 50px
+
+.app-name
+    text-align: center
+
+@media (min-width: 1024px)
+    .app-item-content
+        width: 100px
+        height: 100px
+
+    .image-cont
+    img
+        width: 60px

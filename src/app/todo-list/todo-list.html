@@ -1,0 +1,19 @@
+<div class="todo-list-container">
+    <div class="todo-list-container">
+        <div class="header">
+            <div class="left">
+                <p class="count">{{count}}</p>
+                <p class="reminders">Reminders</p>
+            </div>
+            <div class="right">
+                <img src="assets/todo-list/slider.horizontal.3.png" alt="">
+            </div>
+        </div>
+        <div class="body">
+            <div class="quality-div" *ngFor="let quality of qualities; let i = index">
+                <span class="circle-span"><img src="assets/todo-list/circle.png"/></span> 
+                <span>{{ quality }}</span>
+            </div>
+        </div>
+    </div>
+</div>
