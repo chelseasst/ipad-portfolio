@@ -1,7 +1,7 @@
 :host
     display: block
     width: 95%
-    height: 60px
+    height: 65px
     border-radius: 20px
     overflow: hidden
 
@@ -20,40 +20,37 @@
     padding: 0.5rem 1rem
 
 .app-item
-    flex: 0 0 15%
+    flex: 0 0 16%
     &:hover
         transform: scale(1.1)
 
 @media (min-width: 450px)
     :host
-        width: 95%
-        height: 65px
+        height: 70px
+
     .app-item
-        flex: 0 0 12%
+        flex: 0 0 13%
 
 @media (min-width: 580px)
     :host
         width: 80%
         height: 78px
 
-
 @media (min-width: 800px)
     :host
         width: 70%
         height: 78px
-
-
-@media (min-width: 800px)
     .app-item
         flex: 0 0 10%
 
-
-@media (min-width: 1220px)
+@media (min-width: 1000px)
     :host
         width: 65%
         height: 85px
+    .app-item
+        flex: 0 0 10%
 
-@media (min-width: 1300px)
+@media (min-width: 1280px)
     :host
         max-height: 95px
         border-radius: 27px
