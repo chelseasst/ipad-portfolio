@@ -1,5 +1,4 @@
 .home-page
-    padding: 2rem 1.5rem 1rem 2.5rem
     margin: 0 auto
     max-width: 1200px
     overflow: hidden
@@ -7,6 +6,7 @@
     flex-direction: column
     justify-content: center
     align-items: center
+    padding-bottom: 1rem
 
 .first-section,
 .second-section
@@ -37,15 +37,19 @@
     margin: 0 auto
 
 @media (min-width: 768px)
+    .home-page
+        padding: 2rem 1.5rem 1rem 2.5rem
+
     .first-section,
     .second-section
-        display: flex
+        flex-direction: row
         align-items: center
         gap: 1rem
         margin-bottom: 2rem
 
     .inner-section-2
-        display: flex
+        flex-direction: row
+        flex-wrap: wrap
         gap: 1rem
         justify-content: center
         align-items: center

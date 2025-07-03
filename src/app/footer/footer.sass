@@ -1,7 +1,7 @@
 :host
     display: block
-    width: 70%
-    max-height: 55px
+    width: 95%
+    height: 60px
     border-radius: 20px
     overflow: hidden
 
@@ -10,7 +10,6 @@
     width: 100%
     background-color: rgba(250, 250, 250, 0.63)
     overflow: hidden
-    padding: 0.3rem 1rem
 
 .app-footer-content
     width: 100%
@@ -18,6 +17,7 @@
     display: flex
     justify-content: space-between
     align-items: center
+    padding: 0.5rem 1rem
 
 .app-item
     flex: 0 0 15%
@@ -25,27 +25,31 @@
         transform: scale(1.1)
 
 @media (min-width: 768px)
-.app-item
-    flex: 0 0 9%
+    // :host
+    //     width: 95%
+    //     height: 80px
+
+    .app-item
+        flex: 0 0 9%
 
 @media (min-width: 1000px)
-:host
-    max-height: 80px
+    :host
+        max-height: 80px
 
-.app-footer-container
-    padding: 0.5rem 1rem
+    .app-footer-container
+        padding: 0.5rem 1rem
 
-.app-item
-    flex: 0 0 9%
+    .app-item
+        flex: 0 0 9%
 
 @media (min-width: 1220px)
-:host
-    max-height: 90px
+    :host
+        max-height: 90px
 
 @media (min-width: 1350px)
-:host
-    max-height: 95px
-    border-radius: 27px
+    :host
+        max-height: 95px
+        border-radius: 27px
     .app-item
         flex: 0 0 8%
 
