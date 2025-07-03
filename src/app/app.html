@@ -2,10 +2,6 @@
   <app-navbar></app-navbar>
   <div class="home-page">
     <section class="first-section">
-      <!-- <div class="combined">
-        <app-time class="time"></app-time>
-        <app-batteries class="batteries"></app-batteries>
-      </div> -->
       <div class="combined">
         <app-app-folder class="folder" (toggleExpansion)="handleFolderState($event)"
           [expanded]="selectedFolderOpen()"></app-app-folder>
