@@ -24,37 +24,38 @@
     &:hover
         transform: scale(1.1)
 
-@media (min-width: 768px)
-    // :host
-    //     width: 95%
-    //     height: 80px
-
-    .app-item
-        flex: 0 0 9%
-
-@media (min-width: 1000px)
+@media (min-width: 450px)
     :host
-        max-height: 80px
-
-    .app-footer-container
-        padding: 0.5rem 1rem
-
+        width: 95%
+        height: 65px
     .app-item
-        flex: 0 0 9%
+        flex: 0 0 12%
+
+@media (min-width: 580px)
+    :host
+        width: 80%
+        height: 78px
+
+
+@media (min-width: 800px)
+    :host
+        width: 70%
+        height: 78px
+
+
+@media (min-width: 800px)
+    .app-item
+        flex: 0 0 10%
+
 
 @media (min-width: 1220px)
     :host
-        max-height: 90px
+        width: 65%
+        height: 85px
 
-@media (min-width: 1350px)
+@media (min-width: 1300px)
     :host
         max-height: 95px
         border-radius: 27px
     .app-item
         flex: 0 0 8%
-
-// .app-footer-container
-//     padding: 1rem 1.8rem
-
-// .app-item
-//     flex: 0 1 7%

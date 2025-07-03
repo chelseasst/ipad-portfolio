@@ -39,5 +39,14 @@
         transition: transform 0.3s ease
         z-index: 1
         &.expanded
-            transform: scale(2.5) translateX(-40px) translateY(-10px)
+            transform: scale(2) translateX(-40px) translateY(-22px)
+            z-index: 10
+
+@media (min-width: 1200px)
+    .scrollable
+        transform: scale(1) translateX(0) translateY(0)
+        transition: transform 0.3s ease
+        z-index: 1
+        &.expanded
+            transform: scale(2.2) translateX(-40px) translateY(-27px)
             z-index: 10
