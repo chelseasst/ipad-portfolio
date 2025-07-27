@@ -1,0 +1,78 @@
+.logo-wrapper
+    margin: 1rem auto
+    display: flex
+    justify-content: center
+    animation: dropBounce 2s ease-out forwards
+    width: 90%
+    height: 100%
+    z-index: 2
+
+// Text
+.text-content
+    padding: 0px 40px 40px 0px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 1.2rem
+
+.text-div
+    max-width: 450px
+    margin-top: 1rem
+    background-color: white
+    border: 1px solid #a2a2a2
+    border-radius: 5px
+    padding: 0.7rem
+    transition: scale 0.2s ease-in
+    .title
+        font-weight: 500
+        padding-bottom: 0.3rem
+    &:hover
+        transform: scale(1.05)
+        box-shadow: 0 5px 15px #777777
+
+.back
+    padding-left: 1.5rem
+    padding-top: 1.5rem
+    color: white
+    text-decoration: underline
+
+@keyframes dropBounce
+    0%
+        transform: translateY(-100vh)
+        opacity: 0
+
+    60%
+        transform: translateY(0)
+        opacity: 1
+
+    75%
+        transform: translateY(-20px)
+
+    90%
+        transform: translateY(0)
+
+    100%
+        transform: translateY(0)
+
+@media  ( min-width: 768px )
+.logo-wrapper
+    width: 80%
+    height: 100%
+
+.text-div
+    border-radius: 10px
+    padding: 1.5rem
+    font-size: 1.2rem
+    .title
+        padding-bottom: 0.5rem
+
+@media  ( min-width: 1000px )
+.logo-wrapper
+    width: 70%
+.text-content
+    padding: 0px 20px 40px 20px
+    flex-direction: row
+    flex-wrap: wrap
+.text-div
+    padding: 2.5rem

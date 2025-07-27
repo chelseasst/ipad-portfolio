@@ -1,0 +1,24 @@
+<div #scrollContainer class="tech-container">
+    <div class="back">
+        <a routerLink="/">Back</a>
+    </div>
+        <div class="logo-wrapper">
+            <img #logo [src]="app.logo" [alt]="app.name" class="animated-logo" />
+        </div>
+
+    <div #text class="text-content">
+        @for(info of app.info; track info){
+        <div class="text-div">
+            <p class="title" [ngStyle]="{
+                background: 'linear-gradient(to left, ' + app.colors[0] + ', ' + app.colors[1] + ')',
+                WebkitBackgroundClip: 'text',
+                backgroundClip: 'text',
+                color: 'transparent'
+              }">{{info.title}}</p>
+            <p>{{info.text}}</p>
+        </div>
+        }@empty {
+        <div class="erorr">No info</div>
+        }
+    </div>
+</div>

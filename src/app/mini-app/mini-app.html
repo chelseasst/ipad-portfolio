@@ -1,7 +1,7 @@
-<div class="mini-item-container">
+<div class="mini-item-container" routerLink="/tech/info" [state]="app">
     <div class="mini-item-content">
         <div class="image-cont">
-                <img [src]="app.image" [alt]="app.name">
+            <img [src]="app.image" [alt]="app.name">
         </div>
     </div>
     <span class="app-name">{{app.name}}</span>

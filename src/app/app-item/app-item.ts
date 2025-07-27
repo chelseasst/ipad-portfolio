@@ -7,5 +7,8 @@ import { Component, Input } from '@angular/core';
   styleUrl: './app-item.sass'
 })
 export class AppItem {
-  @Input() app!: { image: string, name: string }
+  @Input() app!: { image: string, name: string, url: string }
+  openUrl(url: string) {
+    window.open(url, '_blank');
+  }
 }

@@ -1,12 +1,12 @@
 <div class="app-footer-container">
     <div class="app-footer-content">
-        <app-mini-app (click)="openUrl('https://wildmarketingagency.com/')" class="app-item"
-            [app]="{ image: 'assets/footer/WM-logo.png', name: '' }"></app-mini-app>
-        <app-mini-app (click)="openUrl('https://the-big-fox-website.vercel.app/menu/menu-bakery')" class="app-item"
-            [app]="{ image: 'assets/footer/fox-logo.ico', name: ''}"></app-mini-app>
-        <app-mini-app (click)="openUrl('https://wildmarketingagency.com/')" class="app-item"
-            [app]="{ image: 'assets/footer/WM-logo.png', name: '' }"></app-mini-app>
-        <app-mini-app (click)="openUrl('https://the-big-fox-website.vercel.app/menu/menu-bakery')" class="app-item"
-            [app]="{ image: 'assets/footer/fox-logo.ico', name: ''}"></app-mini-app>
+        <app-app-item class="app-item"
+            [app]="{ image: 'assets/footer/WM-logo.png', name: '', url:'https://wildmarketingagency.com/' }"></app-app-item>
+        <app-app-item class="app-item"
+            [app]="{ image: 'assets/footer/fox-logo.ico', name: '', url:'https://the-big-fox-website.vercel.app/menu/menu-bakery'}"></app-app-item>
+        <app-app-item class="app-item"
+            [app]="{ image: 'assets/footer/airDebrief.png', name: '', url:'https://air-debrief.vercel.app' }"></app-app-item>
+        <app-app-item class="app-item"
+            [app]="{image : 'assets/footer/marketing-portfolio.png', name:'', url:'https://marketing-portfolio-flame.vercel.app/'}"></app-app-item>
     </div>
 </div>

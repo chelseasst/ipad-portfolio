@@ -1,21 +1,18 @@
 <div class="app-folder-container" (click)="expandFolder($event)">
     <div class="scrollable" [class.expanded]="expanded">
         <div class="app-folder-content">
-            <app-mini-app class="mini-app"
-                [app]="{image: 'assets/app-item/javascript.png', name:'JavaScript'}"></app-mini-app>
-            <app-mini-app class="mini-app"
-                [app]="{image: 'assets/app-item/typescript.png', name:'TypeScript'}"></app-mini-app>
-            <app-mini-app class="mini-app"
-                [app]="{image: 'assets/app-item/angularjs.png', name:'Angular'}"></app-mini-app>
-            <app-mini-app class="mini-app" [app]="{image: 'assets/app-item/nodejs.png', name:'NodeJs'}"></app-mini-app>
-            <app-mini-app class="mini-app" [app]="{image: 'assets/app-item/rxjs.png', name:'RxJS'}"></app-mini-app>
-            <app-mini-app class="mini-app" [app]="{image: 'assets/app-item/html.svg', name:'HTML'}"></app-mini-app>
+            @for (app of appsFolder1; track app;) {
+            <app-mini-app class="mini-app" [app]="app"></app-mini-app>
+            } @empty {
+            <li>And error occured.</li>
+            }
         </div>
         <div class="app-folder-content">
-            <app-mini-app class="mini-app" [app]="{image: 'assets/app-item/css.png', name:'CSS'}"></app-mini-app>
-            <app-mini-app class="mini-app" [app]="{image: 'assets/app-item/sass.png', name:'SASS'}"></app-mini-app>
-            <app-mini-app class="mini-app"
-                [app]="{image: 'assets/app-item/firebase.png', name:'Firebase'}"></app-mini-app>
+            @for (app of appsFolder2; track app;) {
+            <app-mini-app class="mini-app" [app]="app"></app-mini-app>
+            } @empty {
+            <li>And error occured.</li>
+            }
         </div>
     </div>
     <div class="folder-name">

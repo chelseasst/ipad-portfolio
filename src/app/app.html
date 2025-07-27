@@ -1,29 +1,4 @@
-<div class="home-screen" [class.folder-open]="selectedFolderOpen()" (click)="handleFolderState(false)">
+<div class="home-screen">
   <app-navbar></app-navbar>
-  <div class="home-page">
-    <section class="first-section">
-      <div class="combined">
-        <app-app-folder class="folder" (toggleExpansion)="handleFolderState($event)"
-          [expanded]="selectedFolderOpen()"></app-app-folder>
-        <app-time class="time"></app-time>
-      </div>
-      <app-todo-list class="todo-list"></app-todo-list>
-      <app-music class="music"></app-music>
-    </section>
-    <section class="second-section">
-      <div class="inner-section-1">
-        <app-notes class="notes"></app-notes>
-      </div>
-      <div class="inner-section-2">
-        <app-white-board class="white-board"></app-white-board>
-        <app-app-item class="app-item"
-          [app]="{image: 'assets/app-item/github-mark.svg', name: 'GitHub'}"></app-app-item>
-        <app-app-item [app]="{image: 'assets/app-item/linkedin-mark.svg', name: 'LinkedIn'}"></app-app-item>
-        <!-- <app-app-folder class="folder" (toggleExpansion)="handleFolderState($event)"
-          [expanded]="selectedFolderOpen()"></app-app-folder> -->
-        <app-batteries class="batteries"></app-batteries>
-      </div>
-    </section>
-  </div>
-  <app-footer class="footer"></app-footer>
+  <router-outlet></router-outlet>
 </div>

@@ -1,14 +1,11 @@
 import { Component } from '@angular/core';
-import { MiniApp } from '../mini-app/mini-app';
+import { AppItem } from '../app-item/app-item';
 
 @Component({
   selector: 'app-footer',
-  imports: [MiniApp],
+  imports: [AppItem],
   templateUrl: './footer.html',
   styleUrl: './footer.sass'
 })
 export class Footer {
-  openUrl(url: string) {
-    window.open(url, '_blank');
-  }
 }
