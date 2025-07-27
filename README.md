@@ -1,59 +1,34 @@
-# IpadPortfolio
+# iPad Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.4.
+Welcome to my interactive portfolio! This project is designed to look and feel like an iPad interface, offering a fun, clickable, and hoverable experience. Explore my skills, projects, and the technologies I use.
+## Features
 
-## Development server
+- **Fully Interactive:** Every element is clickable or hoverable, just like a real iPad. Try clicking around!
+- **App-Folder Navigation:** Click on the "App Folder" to reveal a collection of items representing the technologies I know.
+- **Technology Details:** Click on any technology icon to navigate to a dedicated page where I explain my experience and knowledge related to that technology.
+- **Modern UI:** Built with Angular, SASS, and a custom design for a smooth, responsive experience.
 
-To start a local development server, run:
+
+## Live Demo
+
+Check out the deployed portfolio here: [https://ipad-portfolio.vercel.app/tech/info](https://ipad-portfolio.vercel.app/tech/info)
+
+## Getting Started
+
+To run the project locally:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Then open your browser at [http://localhost:4200/](http://localhost:4200/).
 
-## Code scaffolding
+## Built With
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- **Angular** – for the application framework
+- **SASS** – for modern, maintainable styles
+- **TypeScript** – for robust, type-safe code
 
-```bash
-ng generate component component-name
-```
+## Why This Portfolio?
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+I wanted to create a portfolio that’s as fun to use as it is informative. By making everything interactive, clickable, and visually engaging, I hope you’ll enjoy exploring my work as much as I enjoyed building it!
