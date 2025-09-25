@@ -1,4 +1,4 @@
-# iPad Portfolio
+# iPad Portfolio 📱
 
 Welcome to my interactive portfolio! This project is designed to look and feel like an iPad interface, offering a fun, clickable, and hoverable experience. Explore my skills, projects, and the technologies I use.
 ## Features
