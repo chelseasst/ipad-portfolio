@@ -21,8 +21,15 @@
 
 .app-item
     flex: 0 0 18%
+    cursor: pointer
     &:hover
         transform: scale(1.1)
+
+.projects
+    display: none
+    &:hover
+        text-decoration: underline
+        cursor: pointer
 
 @media (min-width: 450px)
     :host
@@ -39,6 +46,8 @@
 @media (min-width: 770px)
     .app-item
         flex: 0 0 10%
+    .projects
+        display: block
 
 @media (min-width: 1000px)
     :host

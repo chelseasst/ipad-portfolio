@@ -1,7 +1,6 @@
 :host
   display: block
   width: 250px
-  height: 282px
   border-radius: 20px
   overflow: hidden
 
@@ -10,44 +9,37 @@
   background-color: rgba(255, 255, 255, 0.69)
   padding: 1rem
 
-.controllers-div
+.controllers-wrapper
   display: flex
   justify-content: space-between
   align-items: flex-end
   padding-top: 1rem
-
-.controllers
-  display: flex
-  gap: 20px
-
-.arrow,
-.pause
-  height: 15px
-  &:hover
-    transform: scale(1.2)
-
-.song-name
-  span
-    font-size: 10px
-    color: rgb(181, 181, 181)
-
-.song-name
-  p
-    font-size: 12px
+  .song-name
+    span
+      font-size: 0.7rem
+      color: rgb(181, 181, 181)
+    p
+      font-size: 0.8rem
+  .controllers
+    display: flex
+    gap: 20px
+    .arrow,
+    .pause
+      height: 15px
+      &:hover
+        transform: scale(1.2)
+        cursor: pointer
 
 // hover effect
-.content
+.content-wrapper
   position: relative
-
   .image-div
     display: flex
     justify-content: center
     align-items: center
-
   .record-img
     display: block
     max-width: 200px
-
   .text
     display: none
     max-height: 280px
@@ -55,11 +47,10 @@
     font-weight: 600
     font-size: 0.9rem
     padding-bottom: 1.2rem
-
   &:hover
+    cursor: pointer
     .record-img
       display: none
-
     .text
       display: block
 
@@ -71,3 +62,14 @@
   .music-container
     width: 450px
     height: 310px
+  .controllers-wrapper
+    .song-name
+      font-size: 1rem
+      span
+        font-size: 0.9rem
+      p
+        font-size: 1rem
+    .controllers
+      .arrow,
+      .pause
+        height: 1rem

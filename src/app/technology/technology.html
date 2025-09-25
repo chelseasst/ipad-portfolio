@@ -2,9 +2,9 @@
     <div class="back">
         <a routerLink="/">Back</a>
     </div>
-        <div class="logo-wrapper">
-            <img #logo [src]="app.logo" [alt]="app.name" class="animated-logo" />
-        </div>
+    <div class="logo-wrapper">
+        <img #logo [src]="app.logo" [alt]="app.name" class="animated-logo" />
+    </div>
 
     <div #text class="text-content">
         @for(info of app.info; track info){
@@ -15,6 +15,11 @@
                 backgroundClip: 'text',
                 color: 'transparent'
               }">{{info.title}}</p>
+            <ul class="list">
+                @for(item of info.list; track item){
+                <li>{{item}}</li>
+                }
+            </ul>
             <p>{{info.text}}</p>
         </div>
         }@empty {

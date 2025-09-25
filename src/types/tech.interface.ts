@@ -8,5 +8,6 @@ export interface Tech {
 
 export interface TechInfo {
     title: string;
+    list: string[]
     text: string;
 }
